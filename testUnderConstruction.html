@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>   
+            html, body {
+                width: 100%;
+                padding-left: 0px;
+                padding-top: 0px;
+                background: #F5F5F5;
+            }
+            .headerBar {
+                position: absolute;
+                width: 100%;
+                height: 11vw;
+                left: 0px;
+                top: 0vw;
+
+                background: linear-gradient(90deg, rgba(7, 30, 90, 0.79) 43.63%, rgba(77, 188, 190, 0.79) 80.87%);
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                z-index: 98;
+            }
+
+            .headerBarImage {
+                position: absolute;
+                width: 100%;
+                height: 11vw;
+                opacity: 0.3;
+                z-index: 99;
+            }
+
+            .logo {
+                position: absolute;
+                width: 13%;
+                left: 15vw;
+                top: 3vw;
+                z-index: 100;
+            }
+
+            .backgroundImage {
+                position: absolute;
+                width:100%;
+                left: 0%;
+                top: 11vw;
+                background-repeat: no-repeat;
+                object-fit: cover;
+                object-position: 70%;
+                opacity: 0.1;
+                filter: drop-shadow(px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                z-index: 0;
+            }
+
+            .underConstructionMessage {
+                font-family: 'Encode Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 1.5vw;
+                line-height: 3.5vw;
+                text-align: center;
+                letter-spacing: 0.09em;
+
+                color: navy;
+            }
+
+            .underMessage {
+                position: absolute;
+                width: 70vw;
+                top: 15vw;
+                left: 15vw;
+            }
+
+            .socialButtonsFacebook {
+                position: absolute;
+                width: 3vw;
+                height: 3vw;
+                left: 47vw;
+                top: 50vw;
+            }
+
+            .socialButtonsInsta {
+                position: absolute;
+                width: 3vw;
+                height: 3vw;
+                left: 53vw;
+                top: 50vw;
+
+            }
+
+            @media screen and (max-width: 800px){
+                .body {
+                    background-color: #EEEEEE;
+                }
+                
+                .headerBar {
+                    position: absolute;
+                    width: 100%;
+                    height: 18vw;
+                    left: 0px;
+                    top: 0px;
+
+                    background: linear-gradient(90deg, rgba(7, 30, 90, 0.79) 43.63%, rgba(77, 188, 190, 0.79) 80.87%);
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                }
+
+                .headerBarImage{
+                    position: absolute;
+                    height: 18vw;
+                }
+
+                .backgroundImage {
+                    width: 100%;
+                    height: 123vw;
+                    top: 18vw;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    object-position: 60%;
+                    opacity: 0.1;
+                    filter: drop-shadow(px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                }
+                
+                .logo{
+                    position: absolute;
+                    left: 30vw;
+                    min-width: 40vw;
+                    top: .2vw;
+                }
+
+                .underConstructionMessage {
+                    font-family: 'Encode Sans';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 3.15vw;
+                    line-height: 4.5vw;
+                    text-align: center;
+                    letter-spacing: 0.20em;
+
+                    color: navy;
+                    }
+
+                .underMessage {
+                    position: absolute;
+                    width: 80vw;
+                    top: 45vw;
+                    left: 10vw;
+                }
+
+                .socialButtonsFacebook {
+                    position: absolute;
+                    width: 6vw;
+                    height: 6vw;
+                    left: 42vw;
+                    top: 120vw;
+                }
+
+                .socialButtonsInsta {
+                    position: absolute;
+                    width: 6vw;
+                    height: 6vw;
+                    left: 52vw;
+                    top: 120vw;
+                }
+
+                .email {
+                    position: absolute;
+                    width: 20vw;
+                    left: 40vw;
+                    top: 105vw;
+                    text-decoration: none;
+
+                    font-family: 'Encode Sans';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 2.15vw;
+                    line-height: 3.5vw;
+                    text-align: center;
+                    letter-spacing: 0.20em;
+                    color: navy;
+                }
+            }  
+        
+
+        </style>
+    </head>
+    <body>
+        <div class="headerBar">
+            <img src="wave_banner-removebg-preview.png" class="headerBarImage">
+            <img src="logo.png" class="logo">
+        </div>
+        <div>
+            <img src="background.jpg" class="backgroundImage">
+        </div>
+        <div>
+            <p class="underConstructionMessage underMessage">Get excited!!! <br/><br/> Site under construction: WildTide is dedicated to supporting its players, families, and community with the best possible website. <br/><br/>
+            We are currently working hard to update the site. Please check back soon for new changes and Summer 2024 Registration Info. You can also connect with us for updates and information on our Instagram and Facebook accounts.</p>
+        </div>
+        <div>
+            <a href="https://www.facebook.com/profile.php?id=61555624635626">
+            <img src="socialbutton-facebook.png" class="socialButtonsFacebook">
+        </a>
+        <a href="https://www.instagram.com/wildtidelax?igsh=MThpcXQ1bTEzbXA1aw==">
+            <img src="socialbutton-instagram.png" class="socialButtonsInsta">
+        </a>
+    </body>
+</html>

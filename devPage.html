@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WildTide Lacrosse</title>
+        <link rel="icon" type="image/x-ixon" href="logo.png">
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>   
+            @import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&display=swap');
+            .devHeroImage {
+                position: absolute;
+                width: 100%;
+                left: 0vw;
+                top: 10vw;
+                background-repeat: no-repeat;
+                object-fit: cover;
+            }
+
+            .heroBackgroundImage {
+                position: absolute;
+                width: 100%;
+                left: 0vw;
+                top: 10vw;
+                background-repeat: no-repeat;
+                object-fit: cover;
+            }
+
+            .devQuickFactsBackground {
+
+                position: absolute;
+                width: 100%;
+                left: 0vw;
+                top: 65vw;
+            }
+
+            .committedToGrowthText {
+
+                position: absolute;
+                width: 80vw;
+                height: 4vw;
+                left: 10vw;
+                top: 66vw;
+
+                font-family: 'Encode Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 2.11vw;
+                line-height: 1.5vw;
+                text-align: center;
+
+                color: #010E34;
+
+            }
+
+            .gradientButton {
+                background: linear-gradient(90deg, #071E5A 0%, #4DBCBE 100%);
+                box-shadow: 0px 4px 4px #010E34;
+                border-radius: 15px;
+
+                font-family: 'Encode Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 1.4vw;
+                text-align: center;
+                text-decoration: none;
+                padding-top: 2vw;
+                padding-right: 1vw;
+                padding-left: 1vw;
+                padding-bottom: 1vw;
+                letter-spacing: 0.09em;
+
+                color: #FFFFFF;
+                }
+
+            .registerForGirlsDevButton {
+                position: absolute;
+                width: 30vw;
+                height: 3vw;
+                left: 17vw;
+                top: 76vw;
+            }
+
+            .registerForBoysDevButton {
+                position: absolute;
+                width: 30vw;
+                height: 3vw;
+                left: 52vw;
+                top: 76vw;
+            }
+
+            .quickFactsText{
+                font-family: 'Encode Sans';
+                font-style: normal;
+                font-weight: 200;
+                font-size: 2.1vw;
+                line-height: 2.4vw;
+                text-align: center;
+
+                color: #000D35;
+            }
+
+            .quickFacts{
+                position: absolute;
+                width: 30vw;
+                left: 34vw;
+                top: 100vw;
+
+            }
+
+            .rosiQuote{
+                position: absolute;
+                width: 25vw;
+                left: 68vw;
+                top: 120vw;
+
+            }
+
+            .quickFactsDetails{
+                position: absolute;
+                width: 80vw;
+                left: 10vw;
+                top: 157vw;
+            }
+
+            .recyclingLacrosse{
+                position: absolute;
+                width: 80vw;
+                left: 5vw;
+                top: 190vw;
+            }
+
+            .footerBar {
+                position: absolute;
+                width: 100%;
+                height: 8vw;
+                left: 0vw;
+                top: 270vw;
+
+                background: linear-gradient(90deg, rgba(7, 30, 90, 0.79) 43.63%, rgba(77, 188, 190, 0.79) 80.87%);
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            }
+
+            .footerImage{
+                position: absolute;
+                width: 13vw;
+                left: 10vw;
+                top: 2.25vw;
+            }
+
+            .footerText{
+                position: absolute;
+                width: 50vw;
+                left: 25vw;
+                top: .5vw;
+                
+                font-family: 'Encode Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 1vw;
+                line-height: 1.5vw;
+                text-align: center;
+
+                color: #FFFFFF;
+            }
+
+            @media screen and (min-width: 481px){
+                .devTeamMainImageMobile, .registerMobile, .moreThanLacrosseImagesMobile, .whereYouBelongImageMobile, .whereYouBelongMobileTextImage,
+                .devQuickFactsBackgroundMobile {
+                    display: none;
+                }
+            }
+
+            @media screen and (max-width: 481px){
+                .devTeamMainImageMobile {
+                    position: absolute;
+                    top: 24vw;
+                    left: 0vw;
+                    width: 100%;
+                }
+
+                .committedToGrowthText {
+                    top: 138vw;
+                    width: 80vw;
+                    left: 10vw;
+
+                    font-size: 4vw;
+                    line-height: 5vw;
+                }
+
+                .quickFactsText {
+                    top: 225vw;
+                    width: 90vw;
+                    left: 5vw;
+
+                    font-size: 5vw;
+                    line-height: 6vw;
+                }
+
+                .quickFactsDetails {
+                    top: 370vw;
+                    width: 75vw;
+                    left: 12vw;
+
+                    text-align: left;
+                    font-size: 4.5vw;
+                    line-height: 6vw;
+                }
+
+                .devQuickFactsBackgroundMobile {
+                    position: absolute;
+                    top: 185vw;
+                    width: 100%;
+                    left: 0vw;
+
+                }
+
+                .recyclingLacrosse {
+                    top: 615vw;
+                    width: 75vw;
+                    left: 12vw;
+
+                    text-align: left;
+                    font-size: 4.5vw;
+                    line-height: 6vw;
+                }
+
+                .registerForBoysDevButton {
+                    top: 152vw;
+                    width: 80vw;
+                    left: 10vw;
+                }
+
+                .registerForGirlsDevButton {
+                    top: 172vw;
+                    width: 80vw;
+                    left: 10vw;
+                }
+
+                .devHeroImage, .heroBackgroundImage, .beyondThePinkLogo, .specialOlympicsLogo, .moreThanLacrosseImages, .whereYouBelongBackground, .whereYouBelongBackgroundGrass, 
+                .whereYouBelongText, .whereYouBelongImages, .devQuickFactsBackground, .rosiQuote, .footerImage{
+                    display: none;
+                }
+
+                .socialButtonsFacebook {
+                    top: 130vw;
+                    left: 55vw;
+                    width: 10vw;
+                    height: 10vw;
+                }
+
+                .socialButtonsInsta {
+                    top: 130vw;
+                    left: 35vw;
+                    width: 10vw;
+                    height: 10vw;
+                }
+
+                .gradientButton {
+                    background: linear-gradient(90deg, #071E5A 0%, #4DBCBE 100%);
+                    box-shadow: 0px 4px 4px #010E34;
+                    border-radius: 5px;
+
+                    font-family: 'Encode Sans';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 3.4vw;
+                    text-align: center;
+                    text-decoration: none;
+                    padding-top: 4vw;
+                    padding-bottom: 4vw;
+                    letter-spacing: 0.09em;
+                    z-index: 1;
+
+                    color: #FFFFFF;
+                }
+
+                .registerMobile {
+                    position: absolute;
+                    top: 144vw;
+                    left: 10vw;
+                    width: 80vw;
+                }
+
+                .whereYouBelongBar {
+                    top: 337.2vw;
+                    height: 15vw;
+                    opacity: 1;
+                }
+
+                .whereYouBelongColor {
+                    position: absolute;
+                    width: 100%;
+                    left: 0vw;
+                    top: 352vw;
+                    height: 694.5vw;
+
+                    background: linear-gradient(180deg, rgba(55, 71, 115, 0.477) -17%, rgba(16, 41, 109, 0.774) 32.24%, rgba(22, 42, 96, 0.9) 43.67%, rgba(5, 69, 85, 0.792) 69.28%, rgba(58, 173, 175, 0.9) 97.69%);
+
+                }
+
+                .whereYouBelongImageMobile {
+                    position: absolute;
+                    top: 355vw;
+                    width: 100%;
+                    left: 0vw;
+                }
+
+                .whereYouBelongMobileTextImage {
+                    position: absolute;
+                    top: 390vw;
+                    width: 100%;
+                    left: 0vw;
+                    z-index: 50;
+                }
+
+                .highSchoolText {
+                    position: absolute;
+                    top: 450vw;
+                    width: 80vw;
+                    left: 10vw;
+
+                    font-size: 4.75vw;
+                    line-height: 6vw;
+                    
+                }
+
+                .middleSchoolText {
+                    position: absolute;
+                    top: 670vw;
+                    width: 80vw;
+                    left: 10vw;
+
+                    font-size: 4.75vw;
+                    line-height: 6vw;
+                }
+
+                .developText {
+                    position: absolute;
+                    top: 860vw;
+                    width: 80vw;
+                    left: 10vw;
+
+                    font-size: 4.75vw;
+                    line-height: 6vw;
+                }
+
+                .moreThanDescription {
+                    top: 114vw;
+                    width: 86vw;
+                    left: 5.5vw;
+
+                    font-size: 3.2vw;
+                    line-height: 5vw;
+                }
+
+                .moreThanLacrosseImagesMobile {
+                    position: absolute;
+                    top: 93vw;
+                    width: 90vw;
+                    left: 5vw;
+                }
+
+                .footerBar {
+                    top: 975vw;
+                    height: 35vw;
+                }
+
+                .footerText {
+                    font-size: 3.25vw;
+                    width: 90vw;
+                    left: 5vw;
+                    top: 4vw;
+                    line-height: 4.5vw;
+                }
+
+            }
+
+
+            </style>
+    </head>
+    <body>
+        <div class="headerBar">
+            <img src="waveBanner.png" class="headerBarImage">
+            <a href="index.html">
+                <img src="devLogo.png" class="logo">
+            </a>
+            <header class="header">
+                <a href="/" class="logo"></a>
+                <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                <ul class="menu">
+                    <li><a href="index.html#aboutUsLink">About</a></li>
+                    <li><a href="girlsPage.html">Girls Program</a></li>
+                    <li><a href="boysPage.html">Boys Program</a></li>
+                    <li><a href="devPage.html">Developmental Program</a></li>
+                    <li><a href="pinkOutPage.html">Pink Out</a></li>
+                    <li><a href="torchRunPage.html">Torch Run</a></li>
+                    <li><a href="index.html#sponsorLink">Sponsors</a></li>
+                </ul>
+                </header>
+            <a href="index.html#aboutUsLink" class="menuAbout menuButtonsText">ABOUT</a>
+            <div class="dropdown"><a class="menuPrograms menuButtonsText">PROGRAMS</a>
+                <div class="dropdown-content row">
+                    <p class="menuDropDownDescription column"><strong>Programs</strong><br/>Find your program</p>
+                    <div class="menuDropDown column">
+                        <a href="girlsPage.html">Girls Program</a>
+                        <a href="boysPage.html">Boys Program</a>
+                        <a href="devPage.html">Developmental Program</a>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown"><a class="menuConnect menuButtonsText">CONNECT</a>
+                <div class="dropdown-content row">
+                    <p class="menuDropDownDescription column"><strong>Connect</strong><br/>Connect with us</p>
+                    <div class="menuDropDown column">
+                        <a href="https://www.facebook.com/profile.php?id=61555624635626">Facebook</a>
+                        <a href="https://www.instagram.com/wildtidelax?igsh=MThpcXQ1bTEzbXA1aw==">Instagram</a>
+                        <a href="mailto: wildtidelacrosse@gmail.com">Email</a>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown"><a class="menuEvents menuButtonsText">EVENTS</a>
+                <div class="dropdown-content row">
+                    <p class="menuDropDownDescription column"><strong>Events</strong><br/>Building community strength</p>
+                    <div class="menuDropDown column">
+                        <a href="pinkOutPage.html">Pink Out</a>
+                        <a href="torchRunPage.html">Torch Run</a>
+                    </div>
+                </div>
+            </div>
+            <a href="index.html#sponsorLink" class="menuSponsor menuButtonsText">SPONSOR</a>
+        </div>
+        <div>
+            <img src="devBackground.png" class="heroBackgroundImage">
+            <img src="devHeroImage.png" class="devHeroImage">
+            <img src="devHeroImageMobile.png" class="devTeamMainImageMobile">
+        </div>
+        <div>
+            <img src="devQuickFactsBackgoundImage.png" class="devQuickFactsBackground">
+            <img src="devQuickFactsImagesMobile.png" class="devQuickFactsBackgroundMobile">
+            <p class="committedToGrowthText">WildTide is committed to the growth of lacrosse in Brunswick County, NC.</p>
+            <a href="https://wildtide.usetopscore.com/e/girls-developmental-summer-2024">
+                <p class="registerForGirlsDevButton gradientButton">Register for Girls Developmental</p>
+            </a>
+            <a href="https://wildtide.usetopscore.com/e/boys-developmental-summer-2024">
+                <p class="registerForBoysDevButton gradientButton">Register for Boys Developmental</p>
+            </a>
+            <p class="quickFactsText quickFacts">
+                <strong>GIRLS DEVELOPMENTAL PROGRAM</strong><br/>
+                (K-4th grade)<br/><br/>  
+                <strong>Spring/Summer Season</strong><br/>
+                April 28th - June 9th<br/><br/>   
+                <strong>Practice Times</strong><br/>
+                Sundays 3pm - 4pm<br/><br/> 
+                <strong>LOCATION</strong><br/>
+                West Brunswick High School<br/>
+                MH Rourk Stadium Turf Field<br/>
+                Shallotte, NC<br/><br/>  
+                <strong>ABOUT</strong><br/>
+                Beginner introduction to lacrosse<br/>
+                Players must have a mouth guard<br/>
+                Sticks and Goggles Provided<br/><br/>  
+                <strong>Director of Girls Program</strong><br/>
+                "Coach Rebecca" (Rebecca Allen)</p>
+            <p class="quickFactsText rosiQuote">"Lacrosse is a part of the world. I love lacrosse because of the friends I have made and I just love playing lacrosse."<br/> 
+                - Rosi, Kindergarten</p>
+
+            <p class="quickFactsText quickFactsDetails">
+                For the best and safest experience for your growing athlete, players need to have a mouthguard, cleats, goggles, and stick at all practice sessions. <br/><br/>
+                WildTide provides goggles and sticks for players who need to use them until they are able to purchase their own. This is one of the ways our organization is making lacrosse more accessible and inclusive to our community.<br/><br/> 
+                Fundraising and sponsorships can help with costs, please reach out for more information. 
+            </p>
+
+            <p class="quickFactsText recyclingLacrosse">
+                “Recycling Lacrosse”<br/><br/>
+                WildTide Girls imagined a way for current players to help younger players, for past players to still be involved, and for new players to have the opportunity to be mentored by a part of the WildTide family - Recycling Lacrosse is what we call it. One part of this ideology is our Developmental Program. <br/><br/>
+                The developmental program was designed to give young ladies from Kindergarten through Fourth Grade an introduction to the greatest sport ever! <br/><br/>
+                The program is guided by Coach Rebecca and lead by a few of our High School players. The idea is for our High School ladies to have the opportunity to develop their communication and leadership skills before they head off to college and the professional world.<br/><br/> 
+                Players are taught lacrosse fundamentals and basic skills in fun, engaging ways to help them develop a love for the game. <br/><br/>
+                This is a great way to see if your player loves this sport and wishes to progress and grow with us in our amazing program. <br/><br/>
+                Players can enter as a developmental player and their journey could take them to the Middle School team, the High School Team, and College Opportunities... did you know that WildTide Girls has never had a Senior who has only had one College/University to choose from!? Each year all of our Senior players receive offers from different schools, giving them the opportunity to choose the right setting and program for them. Not all of our seniors actually choose to play in college, many go on to pursue academics only and we are just as proud of them as we are of the ones who continue their lacrosse career, in addition to furthering their academic achievements. <br/><br/>
+                Some players have even come back to help coach! 
+            </p>
+        </div>
+        <div class="footerBar">
+            <img src="footerWildTideImage.png" class="footerImage">
+            <p class="footerText">WildTide Lacrosse is part of the Brunswick County Youth Council -  a 501(c)(3) nonprofit organization. <br/><br/> Copyright 2024 © WildTide Lacrosse <br/> All Rights Reserved.</p>
+        </div>
+    </body>
+</html>

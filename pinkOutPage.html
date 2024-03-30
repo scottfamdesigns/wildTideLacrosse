@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WildTide Lacrosse</title>
+        <link rel="icon" type="image/x-ixon" href="logo.png">
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>  
+            @import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&display=swap'); 
+            .pinkOutHeroImage {
+                position: absolute;
+                width: 100%;
+                left: 0%;
+                top: 10vw;
+                background-repeat: no-repeat;
+                object-fit: cover;
+            }
+
+            .pinkOutWhiteCircle {
+                position: absolute;
+                height: 13vw;
+                width: 13vw;
+                left: 7.7vw;
+                top: 2.15vw;
+                border-radius: 50%;
+                display: inline-block;
+                z-index: 99998;
+
+                background-color: #FFFFFF;
+            }
+
+            .goingBeyondImage {
+                position: absolute;
+                width: 59vw;
+                left: 0vw;
+                top: 63.5vw;
+                background-repeat: no-repeat;
+                object-fit: cover;
+            }
+
+            .beyondThePinkLogo {
+                position: absolute;
+                width: 18vw;
+                top: 107vw;
+                left: 14vw;
+            }
+
+            .leadershipCommunityImage {
+                position: absolute;
+                width: 40vw;
+                right: 2vw;
+                top: 107vw;
+                background-repeat: no-repeat;
+                object-fit: cover;
+            }
+
+            .pinkOutText{
+                font-family: 'Encode Sans';
+                font-style: normal;
+                font-weight: 200;
+                font-size: 2.25vw;
+                line-height: 3vw;
+                text-align: center;
+
+                color: #000D35;
+            }
+
+            .leadershipText {
+                position: absolute;
+                width: 40vw;
+                right: 4vw;
+                top: 70vw;
+            }
+
+            .communityText {
+                position: absolute;
+                width: 40vw;
+                right: 4vw;
+                top: 120vw;
+            }
+
+            .pinkOutImage {
+                position: absolute;
+                width: 100vw;
+                right: 0vw;
+                top: 125vw;
+                background-repeat: no-repeat;
+                object-fit: cover;
+            }
+
+            .pinkOutDescription {
+                position: absolute;
+                width: 90vw;
+                left: 5vw;
+                top: 210vw; 
+
+                text-align: left;
+            }
+
+            .footerBar {
+                position: absolute;
+                width: 100%;
+                height: 8vw;
+                left: 0px;
+                top: 310vw;
+
+                background: linear-gradient(90deg, rgba(7, 30, 90, 0.79) 43.63%, rgba(77, 188, 190, 0.79) 80.87%);
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            }
+
+            .footerImage{
+                position: absolute;
+                width: 13vw;
+                left: 10vw;
+                top: 2.25vw;
+            }
+
+            .footerText{
+                position: absolute;
+                width: 50vw;
+                left: 25vw;
+                top: .5vw;
+                
+                font-family: 'Encode Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 1vw;
+                line-height: 1.5vw;
+                text-align: center;
+
+                color: #FFFFFF;
+            }
+
+            @media screen and (min-width: 481px){
+                .goingBeyondImageMobile, .pinkOutHeroImageMobile, .pinkOutDescriptionBackground, .leadershipCommunityImageMobile, .pinkOutButton {
+                    display: none;
+                }
+            }
+
+            @media screen and (max-width: 481px) {
+                .pinkOutHeroImage, .goingBeyondImage, .footerImage {
+                    display: none;
+                }
+                
+                .pinkOutWhiteCircle {
+                    left: 34.75vw;
+                    min-width: 30.5vw;
+                    min-height: 30.5vw;
+                    top: 6.3vw;
+                }
+
+                .pinkOutHeroImageMobile {
+                    position: absolute;
+                    top: 24vw;
+                    width: 100%;
+                    left: 0vw;
+                }
+
+                .communityText {
+                    top: 130vw;
+                    width: 90vw;
+                    left: 5vw;
+
+                    font-size: 4.5vw;
+                    line-height: 5vw;
+                }
+
+                .pinkOutButton {
+                    position: absolute;
+                    width: 90vw;
+                    left: 5vw;
+                    top: 148vw;
+
+                    background: linear-gradient(90deg, #FE0A95 0%, #010E34 100%);
+                    box-shadow: 0px 4px 4px #010E34;
+                    border-radius: 10px;
+                    padding-top: 4vw;
+                    padding-bottom: 4vw;
+
+                    font-family: 'Encode Sans';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 3.5vw;
+                    line-height: 1.5vw;
+                    text-align: center;
+
+                    color: #FFFFFF;
+
+                }
+
+                .goingBeyondImageMobile {
+                    position: absolute;
+                    top: 168vw;
+                    width: 100%;
+                    left: 0vw;
+                }
+
+                .beyondThePinkLogo {
+                    top: 220vw;
+                    width: 40vw;
+                    left: 9vw;
+                }
+
+                .leadershipCommunityImage {
+                    top: 300vw;
+                }
+
+                .pinkOutImage {
+                    top: 300vw;
+                }
+
+                .leadershipText {
+                    top: 265vw;
+                    width: 80vw;
+                    left: 10vw;
+
+                    font-size: 4vw;
+                    line-height: 5vw;
+                    text-align: left;
+                }
+
+                .leadershipCommunityImageMobile {
+                    position: absolute;
+                    top: 313vw;
+                    width: 75vw;
+                    left: 10vw;
+                }
+                
+                .pinkOutImage {
+                    top: 325vw;
+                }
+
+                .pinkOutDescription {
+                    top: 440vw;
+                    width: 80vw;
+                    left: 10vw;
+
+                    font-size: 4vw;
+                    line-height: 5vw;
+                }
+
+                .pinkOutDescriptionBackground {
+                    position: absolute;
+                    top: 400vw;
+                    left: 0vw;
+                    width: 100%;
+                }
+
+                .footerBar {
+                    top: 720vw;
+                    height: 35vw;
+                }
+
+                .footerText {
+                    font-size: 3.25vw;
+                    width: 90vw;
+                    left: 5vw;
+                    top: 4vw;
+                    line-height: 4.5vw;
+                }
+
+                .footerImage {
+                    top: 2vw;
+                    left: 40vw;
+                    width: 20vw;
+                }
+
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="headerBar">
+            <img src="waveBanner.png" class="headerBarImage">
+            <a href="index.html">
+                <img src="pinkOutLogo.png" class="logo">
+                <span class="pinkOutWhiteCircle"></span>
+            </a>
+            <header class="header">
+                <a href="/" class="logo"></a>
+                <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                <ul class="menu">
+                    <li><a href="index.html#aboutUsLink">About</a></li>
+                    <li><a href="girlsPage.html">Girls Program</a></li>
+                    <li><a href="boysPage.html">Boys Program</a></li>
+                    <li><a href="devPage.html">Developmental Program</a></li>
+                    <li><a href="pinkOutPage.html">Pink Out</a></li>
+                    <li><a href="torchRunPage.html">Torch Run</a></li>
+                    <li><a href="index.html#sponsorLink">Sponsors</a></li>
+                </ul>
+            </header>
+            <a href="index.html#aboutUsLink" class="menuAbout menuButtonsText">ABOUT</a>
+            <div class="dropdown"><a class="menuPrograms menuButtonsText">PROGRAMS</a>
+                <div class="dropdown-content row">
+                    <p class="menuDropDownDescription column"><strong>Programs</strong><br/>Find your program</p>
+                    <div class="menuDropDown column">
+                        <a href="girlsPage.html">Girls Program</a>
+                        <a href="boysPage.html">Boys Program</a>
+                        <a href="devPage.html">Developmental Program</a>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown"><a class="menuConnect menuButtonsText">CONNECT</a>
+                <div class="dropdown-content row">
+                    <p class="menuDropDownDescription column"><strong>Connect</strong><br/>Connect with us</p>
+                    <div class="menuDropDown column">
+                        <a href="https://www.facebook.com/profile.php?id=61555624635626">Facebook</a>
+                        <a href="https://www.instagram.com/wildtidelax?igsh=MThpcXQ1bTEzbXA1aw==">Instagram</a>
+                        <a href="mailto: wildtidelacrosse@gmail.com">Email</a>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown"><a class="menuEvents menuButtonsText">EVENTS</a>
+                <div class="dropdown-content row">
+                    <p class="menuDropDownDescription column"><strong>Events</strong><br/>Building community strength</p>
+                    <div class="menuDropDown column">
+                        <a href="pinkOutPage.html">Pink Out</a>
+                        <a href="torchRunPage.html">Torch Run</a>
+                    </div>
+                </div>
+            </div>
+            <a href="index.html#sponsorLink" class="menuSponsor menuButtonsText">SPONSOR</a>
+        </div>
+        <div>
+            <img src="pinkOutHeroImage.png" class="pinkOutHeroImage">
+            <img src="pinkOutHeroImageMobile.png" class="pinkOutHeroImageMobile">
+        </div>
+        <div>
+            <a href="mailto:Janet@bluecoastreality.com?subject=I want to help WildTide Fight Breast Cancer">
+                <button class="pinkOutButton">HELP US FIGHT BREAST CANCER</button>
+            </a>
+            <img src="goingBeyondImage.png" class="goingBeyondImage">
+            <img src="goingBeyondImageMobile.png" class="goingBeyondImageMobile">
+            <a target="_blank" rel="noopener noreferrer" href="https://www.goingbeyondthepink.org">
+                <img src="beyondThePinkLogo.png" class="beyondThePinkLogo"> 
+            </a>
+            <p class="pinkOutText leadershipText">
+                To WildTide leadership means community involvement. WildTide supports their local community by hosting events like their annual PinkOut Fundraising Event- a lacrosse match where all proceeds go to Going Beyond the Pink- providing financial assistance and thousands of support resources to our breast cancer community- and a selected local breast cancer survivor to support their fight.
+            </p>
+            <p class="pinkOutText communityText">
+                WildTide and our community stand as a united force, together as one.
+            </p>
+        </div>
+        <div>
+            <img src="leadershipCommunityImage.png" class="leadershipCommunityImageMobile">
+            <img src="pinkOutTeamImage.png" class="pinkOutImage">
+        </div>
+        <div>
+            <img src="pinkOutDescriptionBackground.png" class="pinkOutDescriptionBackground">
+            <p class="pinkOutText pinkOutDescription">
+                ”Pink Out”<br/><br/>
+                In 2021 when one of our founding members, Maryann Dolan, was diagnosed with breast cancer, our Lacrosse Family wanted to do something to support her so we decided to hold a fundraiser!<br/><br/>
+                We wanted to donate all of the proceeds to help Maryann navigate her way through the challenges we knew she had ahead of her. Maryanne, however, had a different idea and asked that we donate all of the money raised to the organization who was assisting her and helping her find her way through, on her journey to recovery. <br/><br/>
+                That organization was Going Beyond the Pink. And so the Pink Out was born.<br/><br/>
+                Every year since, we have held this event as a fundraiser, and 100% of the money raised has been donated back to Going Beyond the Pink and/or a breast cancer warrior within our local Lacrosse community.<br/><br/>
+                The pink out itself is a “play date” for lacrosse players in and around Brunswick, Horry, and New Hanover counties. All players are welcome to come and take part in this amazing day and help not only fundraise, but also to grow our Lacrosse community on the coast. The day consists of 15 minute half-field scrimmages, broken down by age level, and concludes with a Boys vs. Girls High School Game… Where we might add that the girls have one for three years in a row!!!<br/><br/>
+                Everyone is invited - players, coaches, families, community members, etc. <br/><br/>
+                Don't forget to WEAR PINK!<br/><br/>
+                Interested in fundraising or donating to this mission? <br/>
+                Please reach out to our Fundraising Coordinator, <a href="mailto:Janet@bluecoastreality.com">Janet@bluecoastreality.com</a>
+            </p>
+        </div>
+        <div class="footerBar">
+            <img src="footerWildTideImage.png" class="footerImage">
+            <p class="footerText">WildTide Lacrosse is part of the Brunswick County Youth Council -  a 501(c)(3) nonprofit organization. <br/><br/> Copyright 2024 © WildTide Lacrosse <br/> All Rights Reserved.</p>
+        </div>
+    </body>
+</html>
