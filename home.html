@@ -85,17 +85,17 @@
 
             .pinkOutInfoText{
                 position: absolute;
-                width: 55vw;
+                width: 58vw;
                 left: 5vw;
-                top: 140vw;
+                top: 130vw;
                 
                 font-family: 'Fjalla One';
                 font-style: normal;
                 font-weight: 400;
-                font-size: 1.5vw;
-                line-height: 3vw;
+                font-size: 2.5vw;
+                line-height: 4vw;
                 text-align: left;
-                letter-spacing: 0.00em;
+                letter-spacing: -0.03em;
 
                 color: #4C0933;                               
             }
@@ -115,7 +115,7 @@
             .pinkOutInfoSarah{
                 position: absolute;
                 width: 45vw;
-                right: 5vw;
+                right: 3vw;
                 top: 122vw;
             }
 
@@ -123,29 +123,37 @@
                 position: absolute;
                 width: 15vw;
                 left: 5vw;
-                top: 130vw;
+                top: 120vw;
+            }
+
+            .circleBackground{
+                position: absolute;
+                width: 48vw;
+                left: 4vw;
+                top: 174vw;
             }
 
             .attendImage{
                 position: absolute;
-                width: 43vw;
-                left: 2vw;
+                width: 83vw;
+                left: -21vw;
                 top: 172vw;
+                clip-path: circle(26% at 57% 50%);
             }
 
             .attendText{
                 position: absolute;
                 top: 180vw;
                 right: 5vw;
-                width: 50vw;
+                width: 45vw;
 
                 font-family: 'Fjalla One';
                 font-style: normal;
                 font-weight: 400;
-                font-size: 1.5vw;
-                line-height: 3vw;
+                font-size: 2.5vw;
+                line-height: 4vw;
                 text-align: right;
-                letter-spacing: 0.00em;
+                letter-spacing: -0.04em;
 
                 color: #4C0933;
             }
@@ -160,23 +168,23 @@
             .supportImage{
                 position: absolute;
                 width: 43vw;
-                right: 2vw;
-                top: 213vw;
+                right: 5vw;
+                top: 237vw;
             }
 
             .supportText{
                 position: absolute;
-                top: 233vw;
+                top: 245vw;
                 left: 5vw;
                 width: 40vw;
  
                 font-family: 'Fjalla One';
                 font-style: normal;
                 font-weight: 400;
-                font-size: 1.5vw;
-                line-height: 3vw;
+                font-size: 2.5vw;
+                line-height: 4vw;
                 text-align: left;
-                letter-spacing: 0.00em;
+                letter-spacing: -0.03em;
 
                 color: #4C0933
 
@@ -186,22 +194,49 @@
                 position: absolute;
                 width: 21vw;
                 left: 5vw;
-                top: 223vw;
+                top: 235vw;
+            }
+
+            .contactUsImage{
+                position: absolute;
+                width: 90vw;
+                left: 5vw;
+                top: 293vw;
+            }
+
+            .contactUsText{
+                position: absolute;
+                width: 90vw;
+                left: 5vw;
+                top: 356vw;
+
+                
+                font-family: 'Fjalla One';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 2.5vw;
+                line-height: 4vw;
+                text-align: left;
+                letter-spacing: -0.03em;
+
+                z-index: 9;
+
+                color: #4C0933;
             }
 
             .footerBar{
-                top: 259vw;
+                top: 380vw;
             }
 
             @media screen and (min-width: 481px){
-                .homeMainImageMobile, .pinkOutMobileButton{
+                .inThisTogetherText, .attendTextMobile, .supportTextMobile, .pinkOutInfoTextMobile, .homeMainImageMobile, .pinkOutMobileButton{
                     display: none;
                 }
             }
 
             @media screen and (max-width: 481px){
 
-                .pinkOutMainPageText, .footerImage, .homeMainImage, .pink.socialButtonsFacebookBoys, .socialButtonsFacebookGirls, .socialButtonsInstaBoys, .socialButtonsInstaGirls, .pinkOutLacrosseTournamnetText {
+                .pinkOutInfoText, .attendText, .supportText, .pinkOutMainPageText, .footerImage, .homeMainImage, .pink.socialButtonsFacebookBoys, .socialButtonsFacebookGirls, .socialButtonsInstaBoys, .socialButtonsInstaGirls, .pinkOutLacrosseTournamnetText {
                     display: none;
                 }
 
@@ -218,19 +253,38 @@
                 width: 30vw;
             }
 
-            .pinkOutInfoText{
+            .inThisTogetherText {
                 position: absolute;
-                width: 60vw;
+                width: 95vw;
+                left: 2.5vw;
+                top: 140vw;
+
+                font-family: 'Fjalla One';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 3.5vw;
+                line-height: 6vw;
+                text-align: center;
+                letter-spacing: -0.06em;
+
+                z-index: 9;
+
+                color: #4C0933;     
+            }
+
+            .pinkOutInfoTextMobile{
+                position: absolute;
+                width: 90vw;
                 left: 5vw;
-                top: 220vw;
+                top: 233vw;
                 
                 font-family: 'Fjalla One';
                 font-style: normal;
                 font-weight: 400;
-                font-size: 5vw;
-                line-height: 6vw;
+                font-size: 4.5vw;
+                line-height: 5.5vw;
                 text-align: left;
-                letter-spacing: 0.09em;
+                letter-spacing: 0.03em;
 
                 z-index: 9;
 
@@ -255,7 +309,7 @@
                 position: absolute;
                 width: 100%;
                 left: 0vw;
-                top: 143vw;
+                top: 158vw;
             }
 
             
@@ -291,7 +345,7 @@
                 width: 60vw;
                 height: 80vw;
                 left: 40vw;
-                top: 180vw;
+                top: 198vw;
                 object-fit: cover;
                 object-position: 0% 100%;
             }
@@ -300,19 +354,27 @@
                 position: absolute;
                 width: 35vw;
                 left: 5vw;
-                top: 200vw;
+                top: 215vw;
             }
 
             .attendImage{
                 position: absolute;
-                width: 95vw;
-                left: 2.5vw;
-                top: 272vw;
+                width: 130vw;
+                left: -45vw;
+                top: 300vw;
+                clip-path: circle(30%);
             }
 
-            .attendText{
+            .circleBackground{
                 position: absolute;
-                top: 370vw;
+                width: 85vw;
+                left: -20vw;
+                top: 300vw;
+            }
+
+            .attendTextMobile{
+                position: absolute;
+                top: 383vw;
                 left: 5vw;
                 width: 90vw;
 
@@ -320,9 +382,9 @@
                 font-style: normal;
                 font-weight: 400;
                 font-size: 4.5vw;
-                line-height: 6vw;
+                line-height: 5.5vw;
                 text-align: left;
-                letter-spacing: 0.09em;
+                letter-spacing: 0.03em;
 
                 z-index: 9;
 
@@ -332,18 +394,21 @@
             .attendWord{
                 position: absolute;
                 width: 15vw;
-                left: 5vw;
-                top: 345vw;
+                left: 55vw;
+                top: 363vw;
             }
 
             .supportImage{
                 position: absolute;
-                width: 80vw;
-                left: 10vw;
-                top: 438vw;
+                width: 69vw;
+                height: 90vw;
+                right: 0vw;
+                top: 445vw;
+                object-fit: cover;
+                object-position: 0% 100%;
             }
 
-            .supportText{
+            .supportTextMobile{
                 position: absolute;
                 top: 545vw;
                 left: 5vw;
@@ -353,9 +418,9 @@
                 font-style: normal;
                 font-weight: 400;
                 font-size: 4.5vw;
-                line-height: 6vw;
+                line-height: 5.5vw;
                 text-align: left;
-                letter-spacing: 0.09em;
+                letter-spacing: 0.03em;
 
                 z-index: 9;
 
@@ -367,25 +432,36 @@
                 position: absolute;
                 width: 21vw;
                 left: 5vw;
-                top: 522vw;
+                top: 525vw;
             }
 
-                
-                .socialButtonsFacebook {
-                    position: absolute;
-                    top: 142vw;
-                    left: 55vw;
-                    width: 10vw;
-                    height: 10vw;
-                }
+            .contactUsImage{
+                position: absolute;
+                width: 90vw;
+                left: 5vw;
+                top: 605vw;
+            }
 
-                .socialButtonsInsta {
-                    position: absolute;
-                    top: 142vw;
-                    left: 35vw;
-                    width: 10vw;
-                    height: 10vw;
-                }
+            .contactUsText{
+                position: absolute;
+                width: 90vw;
+                left: 5vw;
+                top: 670vw;
+
+                
+                font-family: 'Fjalla One';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 4.5vw;
+                line-height: 5.5vw;
+                text-align: left;
+                letter-spacing: 0.03em;
+
+                z-index: 9;
+
+                color: #4C0933;
+            }
+
 
                 .mainImage {
                     position: relative;
@@ -394,7 +470,7 @@
 
                 .footerBar {
                     height: 30vw;
-                    top: 595vw;
+                    top: 720vw;
                 }
 
                 .footerText {
@@ -469,10 +545,10 @@
             </div>
             <a href="pink-out" class="registerButton">
                 <img src="pinkOutButtonImage.png" class="pinkOutButtonImage">    
-            </br>PLAY. ATTEND. SUPPORT</a>
+            </br>PLAY. ATTEND. SUPPORT.</a>
             <a href="pink-out" class="pinkOutMobileButton">
                 <img src="pinkOutButtonImage.png" class="pinkOutButtonImageMobile">    
-            </br>PLAY. ATTEND. SUPPORT</a>
+            </br>PLAY. ATTEND. SUPPORT.</a>
             <img src="herFightHeroImage.png" class="homeMainImage">
             <img src="herFightHeroImageMobile.png" class="homeMainImageMobile">
         <div class="video-container">
@@ -483,27 +559,54 @@
             <p class="pinkOutLacrosseTournamnetText">WILD TIDE'S ANNUAL LACROSSE TOURNAMENT FOR BREAST CANCER AWARENESS</p>
         </div>
         <div>
+            <p class="inThisTogetherText">WE ARE ALL IN THIS TOGETHER WITH ONE GOAL 
+                - TO RAISE MONEY FOR </br>LOCAL BREAST CANCER PATIENTS AND SUPPORT THEIR FIGHT TO SURVIVE</p>
+        </div>
+        <img src="SarahLookingOverShoulderLeftPinkOut.png" class="pinkOutInfoSarah"> 
+        <div>
             <p class="playAttendSupportText playWord">PLAY.</p>
-            <p class="pinkOutInfoText">MULTIPLE 15 MINUTE HALF-FIELD SCRIMMAGES</br>HIGH SCHOOL, MIDDLE SCHOOL, AND ELEMENTARY SCHOOL TEAMS</p>
+            <p class="pinkOutInfoText">PLAY THE GAME YOU LOVE FOR AN INCREDIBLE CAUSE!</br>
+            </br>COME TOGETHER WITH PLAYERS, FAMILY, AND OUR LACROSSE COMMUNITY TO BE A PART OF SOMETHING BIG.</br>
+            </br>TOGETHER WE CAN IMPACT LOCAL BREAST CANCER PATIENTS' LIVES FOR THE BETTER.
+            </p>
+            <p class="pinkOutInfoTextMobile">PLAY THE GAME YOU LOVE FOR</br> AN INCREDIBLE CAUSE!</br>
+            </br>COME TOGETHER WITH PLAYERS, </br>FAMILY, AND OUR LACROSSE COMMUNITY </br>TO BE A PART OF SOMETHING BIG.</br>
+            </br>TOGETHER WE CAN IMPACT LOCAL BREAST CANCER PATIENTS' LIVES FOR THE BETTER.
+            </p>
         </div>
         <div>
-            <img src="pinkOutInfoImage.png" class="pinkOutInfoImage">
-            <img src="SarahLookingOverShoulderLeftPinkOut.png" class="pinkOutInfoSarah">     
+            <img src="pinkOutInfoImage.png" class="pinkOutInfoImage">    
         </div>
         <div>
+            <img src="circleBackground.png" class="circleBackground">
             <img src="attendImage.png" class="attendImage">
             <p class="playAttendSupportText attendWord">ATTEND.</p>
-            <p class="attendText">WEAR PINK AND COME SUPPORT YOUR WILD TIDE PLAYERS! 💙🌊</br>
-            CLOCK YOUR FASTEST LACROSSE SHOT WITH BRUNSWICK COUNTY SHERIFF RADAR 🥍🔥</br>
-            TREAT YOURSELF TO A COLD BREW FLOAT ❤️</br></br>
-            AND BE SURE TO CHECK OUT OUR VENDORS AND BREAST CANCER INFO BOOTH 🩷 </p>
+            <p class="attendText">WEAR PINK AND COME SUPPORT YOUR WILD TIDE PLAYERS! 💙🌊</br></br>
+                CLOCK YOUR FASTEST LACROSSE SHOT WITH BRUNSWICK COUNTY SHERIFF RADAR 🥍🔥</br></br>
+                TREAT YOURSELF TO A COLD BREW FLOAT.</br></br>
+                AND BE SURE TO CHECK OUT OUR VENDORS AND BREAST CANCER INFO BOOTH!
+                </p>
+            <p class="attendTextMobile">WEAR PINK AND COME SUPPORT YOUR WILD TIDE PLAYERS! 💙🌊</br></br>
+            CLOCK YOUR FASTEST LACROSSE SHOT WITH BRUNSWICK COUNTY SHERIFF RADAR 🥍🔥</br></br>
+            TREAT YOURSELF TO A COLD BREW FLOAT.</br></br>
+            AND BE SURE TO CHECK OUT OUR VENDORS AND BREAST CANCER INFO BOOTH!
+            </p>
         </div>
         <div>
             <img src="supportImage.png" class="supportImage">
             <p class="playAttendSupportText supportWord">SUPPORT.</p>
-            <p class="supportText">BECOME A PINK OUT VENDOR</br>
-            MAKE A MONETARY OR ITEM DONATION TOWARDS OUR FIGHT TO END BREAST CANCER</br>
-            BECOME A WILD TIDE SPONSOR AND MAKE A DIFFERENCE FOR OUR PLAYERS AND OUR COMMUNITY</p>
+            <p class="supportText">WE ARE CALLING ON OUR COMMUNITY TO MAKE THIS THE BIGGEST PINK OUT EVER!</br></br>
+                WHETHER YOU'RE A BUSINESS WANTING A BOOTH OR SOMEONE WANTING TO DONATE TO A GREAT CAUSE, WE NEED YOUR HELP!</br></br>
+                PROCEEDS GO TO GOING BEYONG THE PINK - A LOCAL BREAST CANCER SUPPORT NONPROFIT.</br></br>
+            </p>
+            <p class="supportTextMobile">WE ARE CALLING ON OUR COMMUNITY TO MAKE THIS THE BIGGEST PINK OUT EVER!</br></br>
+                WHETHER YOU'RE A BUSINESS WANTING A BOOTH OR SOMEONE WANTING TO DONATE TO A GREAT CAUSE, WE NEED YOUR HELP!</br></br>
+                PROCEEDS GO TO GOING BEYONG THE PINK - A LOCAL BREAST CANCER SUPPORT NONPROFIT.</br></br>
+            </p>
+            <img src="contactUsImage.png" class="contactUsImage">
+            <p class="contactUsText">A WOMAN IS DIAGNOSED WITH BREAST CANCER EVERY 2 MINUTES.</br></br>
+                IT TAKES LESS THAN 2 MINUTES TO <a href="mailto:Janet@BlueCoastRealty.com">CONTACT US</a> AND SEE HOW YOU CAN HELP IN OUR FIGHT TODAY! WE CAN MAKE A DIFFERENCE TOGETHER!
+            </p>
         </div>
         <div class="footerBar">
             <img src="footerWildTideImage.png" class="footerImage">
