@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Wild Tide Lacrosse</title>
+        <link rel="icon" type="image/x-ixon" href="logo.png">
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>   
+            @import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&display=swap');
+            .backgroundImage {
+                position: absolute;
+                width: 100%;
+                height: 53vw;
+                top: 10vw;
+                left: 0vw;
+                background-repeat: no-repeat;
+                object-fit: fill;
+                object-position: 70%;
+                filter: drop-shadow(px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            }
+
+            .heroImageSection {
+                position: absolute;
+                width: 100%;
+                left: 0px;
+                top: -3vw;
+            }
+
+            .boysTeamMainImage {
+                position: absolute;
+                width: 100%;
+                left: 0vw;
+                top: 10vw;
+
+            }
+
+            .logo {
+                left: 10vw;
+            }
+
+            .socialButtonsInsta {
+                position: absolute;
+                width: 2.5vw;
+                height: 2.5vw;
+                left: 46vw;
+                top: 55.5vw;
+            }
+
+            .socialButtonsFacebook {
+                position: absolute;
+                width: 2.6vw;
+                height: 2.6vw;
+                left: 52vw;
+                top: 55.5vw;
+            }
+
+            .mainBodyText {
+                font-family: 'Encode Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 1.3vw;
+                line-height: 20px;
+                text-align: left;
+                letter-spacing: 0.09em;
+
+                color: #000D35;
+            }
+
+            .moreThanLacrosseSection {
+                position: absolute;
+                width: 100%;
+                top: 62vw;
+                left: 0px;
+            }
+
+            .whereYouBelongSection {
+                position: absolute;
+                width: 100%;
+                left: 0px;
+                top: 20vw;
+            }
+
+            .moreThanLacrosseImages {
+                position: absolute;
+                width: 94vw;
+                left: 2vw;
+                z-index: 95;
+            }
+
+            .moreThanDescription {
+                position: absolute;
+                width: 29vw;
+                left: 61vw;
+                top: 60vw;
+            }
+
+            .successWords {
+                position: absolute;
+                top: 80vw;
+                width: 30vw;
+                right: 2vw;
+            }
+
+            .whereYouBelongBar {
+                position: absolute;
+                width: 100%;
+                height: 8vw;
+                left: 0vw;
+                top: 145vw;
+
+                background: linear-gradient(90deg, rgba(7, 30, 90, 0.79) 43.63%, rgba(77, 188, 190, 0.79) 80.87%);
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            }
+
+
+            .whereYouBelongBackground {
+                position: absolute;
+                width: 100%;
+                left: 0vw;
+                top: 155vw;
+            }
+
+           .whereYouBelongImages {
+                position: absolute;
+                width: 90vw;
+                left: 5vw;
+                top: 172vw;
+           }
+
+           .whereYouBelongColor {
+                position: absolute;
+                width: 100%;
+                height: 300vw;
+                left: 0vw;
+                top: 145vw;;
+
+                background: linear-gradient(180deg, rgba(55, 71, 115, 0.477) -17%, rgba(16, 41, 109, 0.774) 32.24%, rgba(22, 42, 96, 0.9) 43.67%, rgba(5, 69, 85, 0.792) 69.28%, rgba(58, 173, 175, 0.9) 97.69%);
+
+           }
+
+           .footerBar {
+                top: 456.5vw;
+            }
+
+
+            .schoolText{
+                font-family: 'Encode Sans';
+                font-style: normal;
+                font-weight: 200;
+                font-size: 2vw;
+                line-height: 3vw;
+                text-align: center;
+
+                color: #FFFFFF;
+
+                text-shadow: 0px 6px 6px rgba(0, 0, 0, 4);  
+            }
+
+            .highSchoolText{
+                position: absolute;
+                width: 50vw;
+                left: 36vw;
+                top: 213vw;
+            }
+
+            .middleSchoolText{
+                position: absolute;
+                width: 50vw;
+                left: 10vw;
+                top: 303vw;
+            }
+
+            .developText{
+
+                position: absolute;
+                width: 50vw;
+                left: 40vw;
+                top: 377vw;
+            }
+
+            @media screen and (min-width: 481px){
+                .boysTeamMainImageMobile, .registerMobile, .moreThanLacrosseImagesMobile, .whereYouBelongImageMobile, .whereYouBelongMobileTextImage {
+                    display: none;
+                }
+            }
+
+            @media screen and (max-width: 481px){
+                .boysTeamMainImageMobile {
+                    position: absolute;
+                    top: 24vw;
+                    left: 0vw;
+                    width: 100%;
+                }
+
+                .logo {
+                    left: 35vw;
+                    min-width: 30vw;
+                    top: 6.5vw;
+                }
+
+                .boysTeamMainImage, .beyondThePinkLogo, .specialOlympicsLogo, .moreThanLacrosseImages, .whereYouBelongBackground, .whereYouBelongBackgroundGrass, .whereYouBelongText, .whereYouBelongImages, .footerImage {
+                    display: none;
+                }
+
+                .socialButtonsFacebook {
+                    top: 142vw;
+                    left: 57vw;
+                    width: 8vw;
+                    height: 8vw;
+                }
+
+                .socialButtonsInsta {
+                    top: 142vw;
+                    left: 35vw;
+                    width: 8vw;
+                    height: 8vw;
+                }
+
+                .gradientButton {
+                    background: linear-gradient(90deg, #071E5A 0%, #4DBCBE 100%);
+                    box-shadow: 0px 4px 4px #010E34;
+                    border-radius: 5px;
+
+                    font-family: 'Encode Sans';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 3.4vw;
+                    text-align: center;
+                    text-decoration: none;
+                    padding-top: 4vw;
+                    padding-bottom: 4vw;
+                    letter-spacing: 0.09em;
+                    z-index: 1;
+
+                    color: #FFFFFF;
+                }
+
+                .registerMobile {
+                    position: absolute;
+                    top: 152vw;
+                    left: 10vw;
+                    width: 80vw;
+                }
+
+                .whereYouBelongBar {
+                    top: 337vw;
+                    height: 15vw;
+                    opacity: 1;
+                }
+
+                .whereYouBelongColor {
+                    position: absolute;
+                    width: 100%;
+                    top: 352vw;
+                    height: 687vw;
+
+                    background: linear-gradient(180deg, rgba(55, 71, 115, 0.477) -17%, rgba(16, 41, 109, 0.774) 32.24%, rgba(22, 42, 96, 0.9) 43.67%, rgba(5, 69, 85, 0.792) 69.28%, rgba(58, 173, 175, 0.9) 97.69%);
+
+                }
+
+                .whereYouBelongImageMobile {
+                    position: absolute;
+                    top: 330vw;
+                    width: 100%;
+                    left: 0vw;
+                }
+
+                .whereYouBelongMobileTextImage {
+                    position: absolute;
+                    top: 378vw;
+                    width: 100%;
+                    left: 0vw;
+                    z-index: 50;
+                }
+
+                .highSchoolText {
+                    position: absolute;
+                    top: 435vw;
+                    width: 80vw;
+                    left: 10vw;
+
+                    font-size: 4.75vw;
+                    line-height: 6vw;
+                    
+                }
+
+                .middleSchoolText {
+                    position: absolute;
+                    top: 660vw;
+                    width: 80vw;
+                    left: 10vw;
+
+                    font-size: 4.75vw;
+                    line-height: 6vw;
+                }
+
+                .developText {
+                    position: absolute;
+                    top: 855vw;
+                    width: 80vw;
+                    left: 10vw;
+
+                    font-size: 4.75vw;
+                    line-height: 6vw;
+                }
+
+                .moreThanDescription {
+                    top: 119vw;
+                    width: 86vw;
+                    left: 5.5vw;
+
+                    font-size: 3.2vw;
+                    line-height: 5vw;
+                }
+
+                .moreThanLacrosseImagesMobile {
+                    position: absolute;
+                    top: 103vw;
+                    width: 90vw;
+                    left: 5vw;
+                }
+
+                .successWords {
+                    top: 252vw;
+                    right: 10vw;
+                    width: 55vw;
+                }
+
+                .footerBar {
+                    top: 1059vw;
+                    height: 35vw;
+                }
+
+                .footerText {
+                    font-size: 3.25vw;
+                    width: 95vw;
+                    left: 2vw;
+                    top: 4vw;
+                    line-height: 4.5vw;
+                }
+            }
+
+            
+
+            </style>
+    </head>
+    <body>
+        <div class="headerBar">
+            <img src="waveBanner.png" class="headerBarImage">
+            <a href="home">
+                <img src="logo.png" class="logo">
+            </a>
+            <header class="header">
+                <a href="/" class="logo"></a>
+                <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                <ul class="menu">
+                    <li><a href="about-us">About</a></li>
+                    <li><a href="girls-program">Girls Program</a></li>
+                    <li><a href="boys-program">Boys Program</a></li>
+                    <li><a href="developmental-program">Developmental Program</a></li>
+                    <li><a href="tournaments">Tournaments</a></li>
+                    <li><a href="pink-out">Pink Out</a></li>
+                    <li><a href="torch-run">Torch Run</a></li>
+                    <li><a href="about-us#sponsorLink">Sponsors</a></li>
+                </ul>
+            </header>
+            <a href="about-us" class="menuAbout menuButtonsText">About</a>
+                <div class="dropdown"><a class="menuPrograms menuButtonsText">Programs</a>
+                    <div class="dropdown-content row">
+                        <p class="menuDropDownDescription column"><strong>Programs</strong><br/>Find your program</p>
+                        <div class="menuDropDown column">
+                            <a href="girls-program">Girls Program</a>
+                            <a href="boys-program">Boys Program</a>
+                            <a href="developmental-program">Developmental Program</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown"><a class="menuTournaments menuButtonsText">Tournaments</a>
+                    <div class="dropdown-content row">
+                        <p class="menuDropDownDescription column"><strong>Tournaments</strong><br/>Where we play</p>
+                        <div class="menuDropDown column">
+                            <a href="tournaments">Girls - Fall 24</a>
+                        </div>
+                    </div>
+                </div>
+            <div class="dropdown"><a class="menuConnect menuButtonsText">Connect</a>
+                <div class="dropdown-content row">
+                    <p class="menuDropDownDescription column"><strong>Connect</strong><br/>Connect with us</p>
+                    <div class="menuDropDown column">
+                        <a href="https://www.facebook.com/profile.php?id=61555624635626">Facebook</a>
+                        <a href="https://www.instagram.com/wildtidelax?igsh=MThpcXQ1bTEzbXA1aw==">Instagram</a>
+                        <a href="mailto: wildtidelacrosse@gmail.com">Email</a>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown"><a class="menuEvents menuButtonsText">Events</a>
+                <div class="dropdown-content row">
+                    <p class="menuDropDownDescription column"><strong>Events</strong><br/>Building community strength</p>
+                    <div class="menuDropDown column">
+                        <a href="pink-out">Pink Out</a>
+                        <a href="torch-run">Torch Run</a>
+                    </div>
+                </div>
+            </div>
+            <a href="about-us#sponsorLink" class="menuSponsor menuButtonsText">Sponsor</a>
+        </div>
+        <div class="heroImageSection">
+            <img src="boysTeamMainImage.png" class="boysTeamMainImage">
+            <img src="boysPageMainImageMobile.png" class="boysTeamMainImageMobile">
+            <a href="pink-out" class="registerButton">
+                <img src="pinkOutButtonImage.png" class="pinkOutButtonImage">    
+            </br>PLAY. ATTEND. SUPPORT</a>
+            <a href="https://www.instagram.com/wildtidelax?igsh=MThpcXQ1bTEzbXA1aw==">
+                <img src="socialbutton-instagram.png" class="socialButtonsInsta">
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61555624635626">
+            <img src="socialbutton-facebook.png" class="socialButtonsFacebook">
+            </a>
+            <a href="https://wildtide.usetopscore.com" class="gradientButton registerMobile">REGISTER FOR 2024 SEASON</a>
+        </div>
+        <div class="moreThanLacrosseSection">
+            <img src="boysMoreThanLacrosseMainImage.png" class="moreThanLacrosseImages">
+            <img src="boysMoreThanLacrosseImagesMobile.png" class="moreThanLacrosseImagesMobile">
+            <img src="successWordsBoys.png" class="successWords">
+            <p class="mainBodyText moreThanDescription">Wild Tide is Family. Support goes beyond the field, developing not only college level lacrosse skill and techniques, but also a player’s work ethic and core values. Players are the the number one priority... winning the tournament is great, winning in life is priceless.</p>
+        </div>
+        <div class="whereYouBelongSection">
+            <img src="boysTeamWhereYouBelongBackground.png" class="whereYouBelongBackground">
+            <img src="boysWhereYouBelongImageMobile.png" class="whereYouBelongImageMobile">
+            <a class="whereYouBelongColor"></a>
+            <a class="whereYouBelongBar"></a>
+            <img src="boysTeamWhereYouBelongWords.png" class="whereYouBelongImages">
+            <img src="boysWhereYouBelongImageMobileText.png" class="whereYouBelongMobileTextImage">
+            <p class="highSchoolText schoolText"><strong>AGE GROUPS</strong><br/>High School<br/>(Rising 9th-12th grade)<br/>Alumni</strong><br/>(Graduated WT High Schoolers)<br/><br/><strong>FALL SEASON</strong><br/>
+                September 21 - October 27<br/><br/><strong>PRACTICE TIMES</strong><br/>Skills & Drills<br/>Saturdays 9am - 10:30am<br/>Scrimmage<br/>Sundays 5:30pm - 7pm<br/>
+                    <br/><strong>LOCATION</strong><br/>South Brunswick High School<br/>Southport, NC<br/><br/>
+                    <strong>DIRECTOR OF BOYS PROGRAM</strong><br/>
+                    <strong>HEAD COACH</strong><br/>
+                    “Coach O" (Dale Oehler)<br/><br/><strong>ASSISTANT COACH</strong><br/>
+                    John Bateman
+            </p>
+            <p class="middleSchoolText schoolText"><strong>MIDDLE SCHOOL</strong><br/>
+                (Rising 6th-8th grade)<br/><br/><strong>FALL SEASON</strong><br/>      
+                September 21 - October 27<br/><br/><strong>PRACTICE TIMES</strong><br/>Skills & Drills<br/>Saturdays 9am - 10:30am<br/>
+                Skills & Drills<br/>Sundays 4pm - 5pm<br/><br/><strong>LOCATION</strong><br/>
+                South Brunswick High School<br/>
+                Southport, NC<br/><br/><strong>DIRECTOR OF BOYS PROGRAM</strong><br/>
+                “Coach O" (Dale Oehler)
+                <br/><br/><strong>ASSISTANT COACH</strong><br/>
+                John Bateman
+            </p>
+            <p class="developText schoolText"><strong>DEVELOPMENTAL PROGRAM</strong><br/>
+                (K - 6th Grade)<br/><br/><strong>2025 SPRING/SUMMER SEASON</strong><br/>      
+                TBA<br/><br/><strong>PRACTICE TIMES</strong><br/>TBA<br/><br/><strong>LOCATION</strong><br/>
+                South Brunswick High School<br/>
+                Jack Campbell Stadium Turf Field<br/>
+                Southport, NC<br/><br/><strong>DIRECTOR OF BOYS PROGRAM</strong><br/>
+                “Coach O" (Dale Oehler)
+                <br/><br/><strong>ASSISTANT COACH</strong><br/>
+                John Bateman
+            </p>
+        </div>
+        <div class="footerBar">
+            <img src="footerWildTideImage.png" class="footerImage">
+            <p class="footerText">Wild Tide Lacrosse is part of the Brunswick County Youth Council -  a 501(c)(3) nonprofit organization. <br/><br/> Copyright 2024 © Wild Tide Lacrosse <br/> All Rights Reserved.</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Wild Tide Lacrosse</title>
+        <link rel="icon" type="image/x-ixon" href="logo.png">
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>  
+            @import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&display=swap'); 
+            .pinkOutHeroImage {
+                position: absolute;
+                width: 100%;
+                left: 0px;
+                top: 7vw;
+            }
+
+            .logo{
+                width: 14.5%;
+                left: 7vw;
+            }
+
+            .pinkOut24InfoImage{
+                position: absolute;
+                top: 59vw;
+                width: 100%;
+                left: 0px;
+            }
+
+            .pinkOutInfoImageFaceOff{
+                position: absolute;
+                top: 120vw;
+                width: 87vw;
+                left: 5vw;
+            }
+
+            .pinkOutInfoImage102624{
+                position: absolute;
+                top: 98vw;
+                width: 40vw;
+                left: 5vw;
+            }
+
+            .goingBeyondImage {
+                position: absolute;
+                width: 59vw;
+                left: 5vw;
+                top: 130vw;
+                background-repeat: no-repeat;
+                object-fit: cover;
+            }
+
+            .beyondThePinkLogo {
+                position: absolute;
+                width: 18vw;
+                top: 173vw;
+                left: 7vw;
+            }
+
+            .leadershipCommunityImage {
+                position: absolute;
+                width: 40vw;
+                right: 2vw;
+                top: 200vw;
+                background-repeat: no-repeat;
+                object-fit: cover;
+            }
+
+            .pinkOutText{
+                font-family: 'Encode Sans';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 2.4vw;
+                line-height: 3vw;
+                text-align: center;
+
+                color: #AB287D;
+            }
+
+            .leadershipText {
+                position: absolute;
+                width: 35vw;
+                right: 5vw;
+                top: 133vw;
+            }
+
+            .communityText {
+                position: absolute;
+                width: 35vw;
+                right: 5vw;
+                top: 173vw;
+            }
+
+            .pinkOutImage {
+                position: absolute;
+                width: 100%;
+                left: 0px;
+                top: 128vw;
+                background-repeat: no-repeat;
+                object-fit: cover;
+            }
+
+            .pinkOutDescription {
+                position: absolute;
+                width: 90vw;
+                left: 5vw;
+                top: 160vw; 
+
+                text-align: left;
+            }
+
+            .coachRebeccaSignature {
+                position: absolute;
+                width: 40vw;
+                left: 40vw;
+                top: 80vw;
+            }
+
+            .pinkOutTeamImage2023 {
+                position: absolute;
+                width: 85vw;
+                left: 5vw;
+                top: 265vw;
+            }
+
+            .lastYearInfo {
+                font-family: 'Encode Sans';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 2.2vw;
+                line-height: 3vw;
+                text-align: center;
+
+                color: #AB287D;
+                position: absolute;
+                width: 85vw;
+                left: 5vw;
+                top: 315vw; 
+
+                text-align: left;
+            }
+
+            .footerBar {
+                top: 340vw;
+            }
+
+            @media screen and (min-width: 481px){
+                .goingBeyondImageMobile, .pinkOut2024InfoImageMobile, .pinkOutHeroImageMobile, .pinkOutDescriptionBackground, .leadershipCommunityImageMobile, .pinkOutButton {
+                    display: none;
+                }
+            }
+
+            @media screen and (max-width: 481px) {
+                .pinkOutInfoImageFaceOff, .goingBeyondImage, .pinkOutHeroImage, .footerImage {
+                    display: none;
+                }
+                
+                .pinkOutWhiteCircle {
+                    left: 36.3vw;
+                    min-width: 27vw;
+                    min-height: 27vw;
+                    top: 7.3vw;
+                }
+
+                .pinkOutHeroImageMobile {
+                    position: absolute;
+                    top: 25vw;
+                    width: 100%;
+                    left: 0px;
+                }
+
+                .pinkOut24InfoImage {
+                    position: absolute;
+                    top: 107vw;
+                    width: 100%;
+                    left: 0px;
+                }
+
+                .pinkOut2024InfoImageMobile{
+                    position: absolute;
+                    top: 167vw;
+                    width: 85vw;
+                    right: 5vw;
+                }
+
+                .pinkOutInfoImage102624{
+                    position: absolute;
+                    top: 120vw;
+                    width: 85vw;
+                    left: 5vw;
+                }
+
+                .pinkOutFaceOffImage2024Mobile {
+                    position: absolute;
+                    top: 240vw;
+                    width: 90vw;
+                    left: 5vw;
+                }
+
+                .communityText {
+                    top: 240vw;
+                    width: 90vw;
+                    left: 5vw;
+
+                    font-size: 4.5vw;
+                    line-height: 5vw;
+                }
+
+                .goingBeyondImageMobile {
+                    position: absolute;
+                    top: 300vw;
+                    width: 100%;
+                    left: 0px;
+                }
+
+                .beyondThePinkLogo {
+                    top: 300vw;
+                    width: 40vw;
+                    left: 9vw;
+                }
+
+                .leadershipCommunityImage {
+                    top: 300vw;
+                }
+
+                .pinkOutImage {
+                    top: 300vw;
+                }
+
+                .leadershipText {
+                    top: 265vw;
+                    width: 80vw;
+                    left: 10vw;
+
+                    font-size: 4vw;
+                    line-height: 5vw;
+                    text-align: left;
+                }
+
+                .leadershipCommunityImageMobile {
+                    position: absolute;
+                    top: 255vw;
+                    width: 75vw;
+                    left: 10vw;
+                }
+                
+                .pinkOutImage {
+                    top: 325vw;
+                }
+
+                .pinkOutDescription {
+                    top: 440vw;
+                    width: 85vw;
+                    left: 5vw;
+
+                    font-size: 4vw;
+                    line-height: 5vw;
+                }
+
+                
+            .coachRebeccaSignature {
+                position: absolute;
+                width: 40vw;
+                right: 8vw;
+                top: 200vw;
+            }
+
+            .pinkOutTeamImage2023 {
+                position: absolute;
+                width: 85vw;
+                left: 5vw;
+                top: 380vw;
+            }
+
+            .lastYearInfo {
+                font-family: 'Encode Sans';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 4vw;
+                line-height: 5.5vw;
+                text-align: left;
+
+                color: #AB287D;
+                position: absolute;
+                width: 85vw;
+                left: 5vw;
+                top: 307vw; 
+            }
+
+                .footerBar {
+                    top: 670vw;
+                    height: 35vw;
+                }
+
+                .footerText {
+                    font-size: 3.25vw;
+                    width: 85vw;
+                    left: 5vw;
+                    top: 4vw;
+                    line-height: 4.5vw;
+                }
+
+                .footerImage {
+                    top: 2vw;
+                    left: 40vw;
+                    width: 20vw;
+                }
+
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="headerBar">
+            <img src="waveBanner.png" class="headerBarImage">
+            <header class="header">
+                <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                <ul class="menu">
+                    <li><a href="about-us">About</a></li>
+                    <li><a href="girls-program">Girls Program</a></li>
+                    <li><a href="boys-program">Boys Program</a></li>
+                    <li><a href="developmental-program">Developmental Program</a></li>
+                    <li><a href="tournaments">Tournaments</a></li>
+                    <li><a href="pink-out">Pink Out</a></li>
+                    <li><a href="torch-run">Torch Run</a></li>
+                    <li><a href="about-us#sponsorLink">Sponsors</a></li>
+                </ul>
+            </header>
+            <a href="about-us" class="menuAbout menuButtonsText">About</a>
+                <div class="dropdown"><a class="menuPrograms menuButtonsText">Programs</a>
+                    <div class="dropdown-content row">
+                        <p class="menuDropDownDescription column"><strong>Programs</strong><br/>Find your program</p>
+                        <div class="menuDropDown column">
+                            <a href="girls-program">Girls Program</a>
+                            <a href="boys-program">Boys Program</a>
+                            <a href="developmental-program">Developmental Program</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown"><a class="menuTournaments menuButtonsText">Tournaments</a>
+                    <div class="dropdown-content row">
+                        <p class="menuDropDownDescription column"><strong>Tournaments</strong><br/>Where we play</p>
+                        <div class="menuDropDown column">
+                            <a href="tournaments">Girls - Fall 24</a>
+                        </div>
+                    </div>
+                </div>
+            <div class="dropdown"><a class="menuConnect menuButtonsText">Connect</a>
+                <div class="dropdown-content row">
+                    <p class="menuDropDownDescription column"><strong>Connect</strong><br/>Connect with us</p>
+                    <div class="menuDropDown column">
+                        <a href="https://www.facebook.com/profile.php?id=61555624635626">Facebook</a>
+                        <a href="https://www.instagram.com/wildtidelax?igsh=MThpcXQ1bTEzbXA1aw==">Instagram</a>
+                        <a href="mailto: wildtidelacrosse@gmail.com">Email</a>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown"><a class="menuEvents menuButtonsText">Events</a>
+                <div class="dropdown-content row">
+                    <p class="menuDropDownDescription column"><strong>Events</strong><br/>Building community strength</p>
+                    <div class="menuDropDown column">
+                        <a href="pink-out">Pink Out</a>
+                        <a href="torch-run">Torch Run</a>
+                    </div>
+                </div>
+            </div>
+            <a href="about-us#sponsorLink" class="menuSponsor menuButtonsText">Sponsor</a>
+        </div>
+        <a href="home">
+        <div class="video-container">
+            <video src="logoPinkOutChangeNew.mp4" autoplay muted class="video"></video>
+        </div>
+        </a>
+        <div>
+            <img src="pinkOutHeroImage.png" class="pinkOutHeroImage">
+            <img src="pinkOutHeroImageMobile.png" class="pinkOutHeroImageMobile">
+        </div>
+        <div>
+            <img src="pinkOutInfoImagepinkOutPage.png" class="pinkOut24InfoImage">
+            <img src="pinkOutInfoImage2024Mobile.png" class="pinkOut2024InfoImageMobile">
+            <img src="pinkOutFaceOffImage2024Mobile.png" class="pinkOutFaceOffImage2024Mobile">
+            <img src="pinkOutInfoImageFaceOff.png" class="pinkOutInfoImageFaceOff">
+        </div>
+        <div>
+            <p class="pinkOutText pinkOutDescription">
+                Her Fight is Our Fight!</br></br>
+
+                Come join Wild Tide for our Annual Pink Out “Play Date”!! ANY player with an active USA Lacrosse Membership can participate, so grab your friends and come out to play for an incredible cause. Entry for play is a minimum $10 Donation. We don’t care how long you have been playing, where you go to school or if you play for another program because we are all in this TOGETHER 🩷 </br></br>
+                
+                The day will consist of multiple 15 minute half-field scrimmages starting at 9:30am (player check in 8:30am) and ending around 2:30pm…or when everyone is exhausted! The teams will be based on the age of the player. The breakdown will be High School, Middle School and Elementary School. Each team will have multiple games. </br></br>
+                
+                This year we are asking our community to get involved with a 50/50 raffle, a fastest shot competition, local vendors and food trucks. Vendor Slots are just a $20 flat fee and filling fast (contact Janet@BlueCoastRealty.com). We will also have 2024 Pink Out T-shirts for sale while supplies last! T Shirt sales will go back to providing scholarship options for Wild Tide players. </br></br>
+                
+                All other proceeds will be donated to Going Beyond the Pink- a local breast cancer support non-profit organization and hub for resources, education, and financial assistance to local breast cancer warriors in Leland, NC.</br></br>
+                
+                
+                Soooo…Spread the Word, Wear Pink and Join our Fight to End Breast Cancer!
+                <img src="coachRebeccaSignature.png" class="coachRebeccaSignature">
+            </p>
+            <img src="pinkOutTeamImage2023.jpg" class="pinkOutTeamImage2023">
+            <p class="lastYearInfo">Last year 100% of our money raised went to Going Beyond the Pink and to a Breast Cancer Warrior within our own Lacrosse Community- Coach Stephanie Blakely, 
+                former coach at St. Andrews University. She battled breast cancer while continuing to coach and recruit players, balancing chemo and undergoing a double mastectomy. 
+                Steph is now cancer free- she welcomed her 7lb 1oz baby boy in March. 
+                We can make a difference together! Join our fight. </p>
+        </div>
+        <div class="footerBar">
+            <img src="footerWildTideImage.png" class="footerImage">
+            <p class="footerText">Wild Tide Lacrosse is part of the Brunswick County Youth Council -  a 501(c)(3) nonprofit organization. <br/><br/> Copyright 2024 © Wild Tide Lacrosse <br/> All Rights Reserved.</p>
+        </div>
+    </body>
+</html>

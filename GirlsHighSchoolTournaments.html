@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Wild Tide Lacrosse</title>
+        <link rel="icon" type="image/x-ixon" href="logo.png">
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>   
+            @import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&display=swap');
+
+            .tournInfoText{
+                font-family: 'Encode Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 1.7vw;
+                line-height: 2vw;
+
+                color: #4DBCBE;
+            }
+
+            .tournDescriptionText{
+                font-family: 'Encode Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 1.5vw;
+                line-height: 2vw;
+                text-align: left;
+            }
+
+            .tournButtons{
+                background: #071E5A;
+                box-shadow: 0px 4px 4px #010E34;
+                border-radius: 10px; 
+                width: 18vw;
+                
+                font-family: 'Encode Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 1.4vw;
+                text-align: center;
+                text-decoration: none;
+                padding-top: 1vw;
+                padding-right: 1vw;
+                padding-left: 1vw;
+                padding-bottom: 1vw;
+                letter-spacing: 0.09em;
+
+                z-index: 9997;
+
+                color: #FFFFFF;
+            }
+
+            .tournInfoIcons{
+                position: absolute;
+                width: 3.5vw;
+                left: -6vw;
+            }
+
+            .tournOne{
+                position: absolute;
+                top: 15vw;
+            }
+
+            .tournTwo{
+                position: absolute;
+                top: 55vw;
+            }
+
+            .tournThree{
+                position: absolute;
+                top: 95vw;
+            }
+
+            .tournFour{
+                position: absolute;
+                top: 135vw;
+            }
+
+            .tournLogo{
+                position: absolute;
+                width: 15vw;
+                left: 5vw;
+                top: 5vw; 
+            }
+
+            .tournInfo{
+                position: absolute;
+                width: 40vw;
+                left: 35vw;
+                top: 5vw;
+ 
+            }
+
+            .tournDescription{
+                position: absolute;
+                width: 90vw;
+                left: 5vw;
+                top: 25vw;
+            }
+
+            .tournDirections{
+                position: absolute;
+                left: 72vw;
+                top: 5vw;
+            }
+            
+            .tournFieldMap{
+                position: absolute;
+                left: 72vw;
+                top: 11.5vw;
+            }
+
+            .tournGameSchedule{
+                position: absolute;
+                left: 72vw;
+                top: 18vw;
+            }
+
+            .footerText{
+                position: absolute;
+                width: 50vw;
+                left: 25vw;
+                top: .5vw;
+                
+                font-family: 'Encode Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 1vw;
+                line-height: 1.5vw;
+                text-align: center;
+
+                color: #FFFFFF;
+            }
+
+            .footerBar {
+                position: absolute;
+                width: 100%;
+                height: 8vw;
+                left: 0vw;
+                top: 175vw;
+
+                background: linear-gradient(90deg, rgba(7, 30, 90, 0.79) 43.63%, rgba(77, 188, 190, 0.79) 80.87%);
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            }
+
+            .footerImage{
+                position: absolute;
+                width: 13vw;
+                left: 10vw;
+                top: 2.25vw;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="headerBar">
+            <img src="waveBanner.png" class="headerBarImage">
+            <a href="index">
+                <img src="logo.png" class="logo">
+            </a>
+            <header class="header">
+                <a href="/" class="logo"></a>
+                <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                <ul class="menu">
+                    <li><a href="index#aboutUsLink">About</a></li>
+                    <li><a href="girlsPage">Girls Program</a></li>
+                    <li><a href="boysPage">Boys Program</a></li>
+                    <li><a href="devPage">Developmental Program</a></li>
+                    <li><a href="pinkOutPage">Pink Out</a></li>
+                    <li><a href="torchRunPage">Torch Run</a></li>
+                    <li><a href="index#sponsorLink">Sponsors</a></li>
+                </ul>
+            </header>
+            <a href="index#aboutUsLink" class="menuAbout menuButtonsText">ABOUT</a>
+            <div class="dropdown"><a class="menuPrograms menuButtonsText">PROGRAMS</a>
+                <div class="dropdown-content row">
+                    <p class="menuDropDownDescription column"><strong>Programs</strong><br/>Find your program</p>
+                    <div class="menuDropDown column">
+                        <a href="girlsPage">Girls Program</a>
+                        <a href="boysPage">Boys Program</a>
+                        <a href="devPage">Developmental Program</a>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown"><a class="menuConnect menuButtonsText">CONNECT</a>
+                <div class="dropdown-content row">
+                    <p class="menuDropDownDescription column"><strong>Connect</strong><br/>Connect with us</p>
+                    <div class="menuDropDown column">
+                        <a href="https://www.facebook.com/profile.php?id=61555624635626">Facebook</a>
+                        <a href="https://www.instagram.com/wildtidelax?igsh=MThpcXQ1bTEzbXA1aw==">Instagram</a>
+                        <a href="mailto: wildtidelacrosse@gmail.com">Email</a>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown"><a class="menuEvents menuButtonsText">EVENTS</a>
+                <div class="dropdown-content row">
+                    <p class="menuDropDownDescription column"><strong>Events</strong><br/>Building community strength</p>
+                    <div class="menuDropDown column">
+                        <a href="pinkOutPage">Pink Out</a>
+                        <a href="torchRunPage">Torch Run</a>
+                    </div>
+                </div>
+            </div>
+            <a href="index#sponsorLink" class="menuSponsor menuButtonsText">SPONSOR</a>
+        </div>
+        <div class="tournOne">
+            <img src="meridethCollege.png" class="tournLogo">
+            <p class="tournInfo tournInfoText">
+                <img src="lacrosseIcon.png" class="tournInfoIcons">
+                Meredith College 6v6</br></br>
+                <img src="dateIcon.png" class="tournInfoIcons">
+                September 29th</br></br>
+                <img src="locationIcon.png" class="tournInfoIcons">
+                Meredith College Grass Fields</br> 
+                3800 Hillsborough St.,</br> 
+                Raleigh, NC
+            </p>
+            <p class="tournDescription tournDescriptionText">This is the 10th year of the MC Lax 6v6 Tournament. 
+                This event is a 100% fundraiser for the Meredith Lacrosse Team. 
+                It is our goal to help grow and support lacrosse in the greater Raleigh area. 
+                Your participation helps our program with additional funds that directly impact our athletes. 
+                We appreciate your support every year to help make this event one that is looked forward to every fall! 
+                This tournament follows Meredith College's Prospect Day, Sept. 28th.” - <tournInfoText>Meredith College</tournInfoText></p>
+            </p>
+            <a href="maps.google.com" class="tournButtons tournDirections">Venue Directions</a>
+            <a href="google.com" class="tournButtons tournFieldMap">Field Map</a>
+            <a href="google.com" class="tournButtons tournGameSchedule">Game Schedule</a>
+        </div>
+        <div class="tournTwo">
+            <img src="laxFestIcon.png" class="tournLogo">
+            <p class="tournInfo tournInfoText">
+                <img src="lacrosseIcon.png" class="tournInfoIcons">
+                North Carolina LaxFest</br></br>
+                <img src="dateIcon.png" class="tournInfoIcons">
+                October 12th - 13th</br></br>
+                <img src="locationIcon.png" class="tournInfoIcons">
+                BRYAN MULTI-SPORTS COMPLEX</br> 
+                501 S. Oak Forest Rd.,</br> 
+                Goldsboro, NC 
+            </p>
+            <p class="tournDescription tournDescriptionText">This is the 10th year of the MC Lax 6v6 Tournament. 
+                This event is a 100% fundraiser for the Meredith Lacrosse Team. 
+                It is our goal to help grow and support lacrosse in the greater Raleigh area. 
+                Your participation helps our program with additional funds that directly impact our athletes. 
+                We appreciate your support every year to help make this event one that is looked forward to every fall! 
+                This tournament follows Meredith College's Prospect Day, Sept. 28th.” - <tournInfoText>Meredith College</tournInfoText></p>
+            </p>
+            <a href="maps.google.com" class="tournButtons tournDirections">Venue Directions</a>
+            <a href="google.com" class="tournButtons tournFieldMap">Field Map</a>
+            <a href="google.com" class="tournButtons tournGameSchedule">Game Schedule</a>    
+        </div>
+        <div class="tournThree">
+            <img src="pinkOutTournLogo.png" class="tournLogo">
+            <p class="tournInfo tournInfoText">
+                <img src="lacrosseIcon.png" class="tournInfoIcons">
+                Wild Tide Lacrosse Pink Out</br></br>
+                <img src="dateIcon.png" class="tournInfoIcons">
+                October 26th</br></br>
+                <img src="locationIcon.png" class="tournInfoIcons">
+                West Brunswick High School</br> 
+                M.H. ROURK STADIUM</br> 
+                550 Whiteville Rd. NW,</br> 
+                Shallotte, NC
+            </p>
+            <p class="tournDescription tournDescriptionText">
+                “... a unique, championship-style day of fun... 
+                The fast-paced and high-scoring nature of the game makes Florida Wave a fun and exciting event. 
+                It's also a great way for players to develop their skills with all players on the field contributing on both offense and defense, 
+                players need to make quick decisions and think on their feet. - <tournInfoText>Wild Tide Lacrosse</tournInfoText></p>
+            </p>
+            <a href="maps.google.com" class="tournButtons tournDirections">Venue Directions</a>
+            <a href="google.com" class="tournButtons tournFieldMap">Field Map</a>
+            <a href="google.com" class="tournButtons tournGameSchedule">Game Schedule</a>
+        </div>
+        <div class="tournFour">
+            <img src="lakeNormanLogo.png" class="tournLogo">
+            <p class="tournInfo tournInfoText">
+                <img src="lacrosseIcon.png" class="tournInfoIcons">
+                Lake Norman Lacrosse Fall Classic</br></br>
+                <img src="dateIcon.png" class="tournInfoIcons">
+                November 2nd - 3rd</br></br>
+                <img src="locationIcon.png" class="tournInfoIcons">
+                RICHARD BARRY Memorial Park</br>
+                13707 Beatties Ford Rd., </br>
+                Huntersville, NC
+            </p>
+            <p class="tournDescription tournDescriptionText">
+                Our goal is to provide your team with an organized and fun weekend, 
+                with a positive environment that encourages sportsmanship and competition. 
+                Offering a coaches' reception, vendors and more, 
+                The Lake Norman Lacrosse Tournament is designed to keep your family engaged and entertained!
+                 - <tournInfoText>Carpetbagger Lacrosse</tournInfoText></p>
+            </p>
+            <a href="maps.google.com" class="tournButtons tournDirections">Venue Directions</a>
+            <a href="google.com" class="tournButtons tournFieldMap">Field Map</a>
+            <a href="google.com" class="tournButtons tournGameSchedule">Game Schedule</a>
+        </div>
+        <div class="footerBar">
+            <img src="footerWildTideImage.png" class="footerImage">
+            <p class="footerText">Wild Tide Lacrosse is part of the Brunswick County Youth Council -  a 501(c)(3) nonprofit organization. <br/><br/> Copyright 2024 © Wild Tide Lacrosse <br/> All Rights Reserved.</p>
+        </div>
+    </body>
+</html>
+
+           
